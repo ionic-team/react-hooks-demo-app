@@ -1,8 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
-import { PlatformHooks, NetworkHooks } from '@ionic/react-hooks';
-const { usePlatform } = PlatformHooks;
-const { useStatus, availableFeatures } = NetworkHooks;
+import { usePlatform } from '@ionic/react-hooks/platform';
+import { useStatus, availableFeatures } from '@ionic/react-hooks/network';
 
 const NetworkPage: React.FC = () => {
   const { platform } = usePlatform();

@@ -1,9 +1,8 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton } from '@ionic/react';
 import { CameraResultType } from '@capacitor/core';
-import { PlatformHooks, CameraHooks } from '@ionic/react-hooks';
-const { usePlatform } = PlatformHooks;
-const { useCamera, availableFeatures } = CameraHooks;
+import { usePlatform } from '@ionic/react-hooks/platform';
+import { useCamera, availableFeatures } from '@ionic/react-hooks/camera';
 
 const CameraPage: React.FC = () => {
   const { platform } = usePlatform();

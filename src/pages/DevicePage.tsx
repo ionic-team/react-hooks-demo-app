@@ -1,8 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
-import { PlatformHooks, DeviceHooks } from '@ionic/react-hooks';
-const { usePlatform } = PlatformHooks;
-const { useGetInfo, useGetLanguageCode, availableFeatures } = DeviceHooks;
+import { usePlatform } from '@ionic/react-hooks/platform';
+import { useGetInfo, useGetLanguageCode, availableFeatures } from '@ionic/react-hooks/device';
 
 const DevicePage: React.FC = () => {
   const { platform } = usePlatform();

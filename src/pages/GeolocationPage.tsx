@@ -1,8 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton } from '@ionic/react';
-import { PlatformHooks, GeolocationHooks } from '@ionic/react-hooks';
-const { usePlatform } = PlatformHooks;
-const { useCurrentPosition, useWatchPosition, availableFeatures } = GeolocationHooks;
+import { usePlatform } from '@ionic/react-hooks/platform';
+import { useCurrentPosition, useWatchPosition, availableFeatures } from '@ionic/react-hooks/geolocation';
 
 const GeolocationPage: React.FC = () => {
   const { platform } = usePlatform();

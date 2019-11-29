@@ -1,12 +1,10 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
-import { PlatformHooks } from '@ionic/react-hooks';
-const { usePlatform } = PlatformHooks;
+import { usePlatform } from '@ionic/react-hooks/platform';
 
 const XState: React.FC = () => {
   const { platform } = usePlatform();
-
-
+  
   return (
     <IonPage>
       <IonHeader>

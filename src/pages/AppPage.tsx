@@ -1,8 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
-import { AppHooks, PlatformHooks } from '@ionic/react-hooks';
-const { usePlatform } = PlatformHooks;
-const { useAppState, useAppUrlOpen, useLaunchUrl, availableFeatures } = AppHooks;
+import { usePlatform } from '@ionic/react-hooks/platform';
+import { useAppState, useAppUrlOpen, useLaunchUrl, availableFeatures } from '@ionic/react-hooks/app';
 
 
 const AppPage: React.FC = () => {

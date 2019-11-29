@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonInput, IonButton } from '@ionic/react';
-import { AccessibilityHooks, PlatformHooks } from '@ionic/react-hooks';
-const { usePlatform } = PlatformHooks;
-const { useIsScreenReaderEnabled, useSpeak, availableFeatures } = AccessibilityHooks;
+import { usePlatform } from '@ionic/react-hooks/platform';
+import { useIsScreenReaderEnabled, availableFeatures, useSpeak } from '@ionic/react-hooks/accessibility';
 
 const AccessibilityPage: React.FC = () => {
   const { platform } = usePlatform();

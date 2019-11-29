@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton, IonInput } from '@ionic/react';
-import { BrowserHooks, PlatformHooks } from '@ionic/react-hooks';
-const { usePlatform } = PlatformHooks;
-const { useClose, useOpen, usePrefetch, availableFeatures } = BrowserHooks;
-
+import { usePlatform } from '@ionic/react-hooks/platform';
+import { useClose, useOpen, usePrefetch, availableFeatures } from '@ionic/react-hooks/browser';
 
 const BrowserPage: React.FC = () => {
   const { platform } = usePlatform();
