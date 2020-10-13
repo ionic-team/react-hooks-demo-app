@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonInput, IonButton } from '@ionic/react';
-import { usePlatform } from '@ionic/react-hooks/platform';
-import { useStorage, useStorageItem, availableFeatures } from '@ionic/react-hooks/storage';
+import { usePlatform } from '@capacitor-community/react-hooks/platform';
+import { useStorage, useStorageItem, availableFeatures } from '@capacitor-community/react-hooks/storage';
 
 const StoragePage: React.FC = () => {
   const { platform } = usePlatform();

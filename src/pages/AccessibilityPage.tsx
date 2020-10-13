@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonInput, IonButton } from '@ionic/react';
-import { usePlatform } from '@ionic/react-hooks/platform';
-import { useIsScreenReaderEnabled, availableFeatures, useSpeak } from '@ionic/react-hooks/accessibility';
+import { usePlatform } from '@capacitor-community/react-hooks/platform';
+import { useIsScreenReaderEnabled, availableFeatures, useSpeak } from '@capacitor-community/react-hooks/accessibility';
 
 const AccessibilityPage: React.FC = () => {
   const { platform } = usePlatform();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
-import { usePlatform } from '@ionic/react-hooks/platform';
-import { useGetInfo, useGetLanguageCode, availableFeatures } from '@ionic/react-hooks/device';
+import { usePlatform } from '@capacitor-community/react-hooks/platform';
+import { useGetInfo, useGetLanguageCode, availableFeatures } from '@capacitor-community/react-hooks/device';
 
 const DevicePage: React.FC = () => {
   const { platform } = usePlatform();
