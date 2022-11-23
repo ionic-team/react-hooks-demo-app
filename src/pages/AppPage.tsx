@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
-import { usePlatform } from '@ionic/react-hooks/platform';
-import { useAppState, useAppUrlOpen, useLaunchUrl, availableFeatures } from '@ionic/react-hooks/app';
+import { usePlatform } from '@capacitor-community/react-hooks/platform';
+import { useAppState, useAppUrlOpen, useLaunchUrl, availableFeatures } from '@capacitor-community/react-hooks/app';
 
 
 const AppPage: React.FC = () => {

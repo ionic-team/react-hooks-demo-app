@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton, IonInput } from '@ionic/react';
-import { usePlatform } from '@ionic/react-hooks/platform';
-import { useClose, useOpen, usePrefetch, availableFeatures } from '@ionic/react-hooks/browser';
+import { usePlatform } from '@capacitor-community/react-hooks/platform';
+import { useClose, useOpen, usePrefetch, availableFeatures } from '@capacitor-community/react-hooks/browser';
 
 const BrowserPage: React.FC = () => {
   const { platform } = usePlatform();

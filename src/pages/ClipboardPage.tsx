@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButtons, IonMenuButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonInput, IonButton } from '@ionic/react';
-import { usePlatform } from '@ionic/react-hooks/platform';
-import { useClipboard, availableFeatures } from '@ionic/react-hooks/clipboard';
+import { usePlatform } from '@capacitor-community/react-hooks/platform';
+import { useClipboard, availableFeatures } from '@capacitor-community/react-hooks/clipboard';
 
 const ClipboardPage: React.FC = () => {
   const { platform } = usePlatform();
